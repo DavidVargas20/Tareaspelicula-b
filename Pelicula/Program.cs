@@ -114,34 +114,28 @@ namespace Pelicula
     class Program
     {
 
- 
+
         static void Main(string[] args)
         {
           
              Pelicula p1 = new Pelicula("lalaland",2003);
             p1.AgregaActor(new Actor ("ryan Goslin" , 1900 ));
-            p1.AgregaActor(new Actor ( "emma stone" , 1905 ));
-            p1.Imprime();
+            p1.AgregaActor(new Actor ("emma stone" , 1905 ));
             p1.ImprimeActores();
             
-             Pelicula p2 = new Pelicula("ellas hablan ", 2022);
-             p2.AgregaActor(new Actor("Clayre Foy", 2014));
-             p2.AgregaActor(new Actor ( "Rooney Mara ", 1985));
-             p2.Imprime();
-             p2.ImprimeActores(); 
-
+             //Pelicula p2 = new Pelicula();
 
               
 
-             List<Pelicula> peliculas = new List<Pelicula>();
+             /* List<Pelicula> peliculas = new List<Pelicula>();
              peliculas.Add (new Pelicula("ellas hablan", 2022));
             peliculas.Add (new Pelicula("ellas hablan", 2022));
             peliculas.Add (new Pelicula("ellas hablan", 2022));
             peliculas.Add (new Pelicula("ellas hablan", 2022));
             peliculas.Add (new Pelicula("ellas hablan", 2022));
-            
+             
 
-               
+             
 
              
              
