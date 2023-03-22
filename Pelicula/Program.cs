@@ -30,7 +30,20 @@ namespace Pelicula
 
 
         //Métodos
-     
+         
+          public string Gettitulo(){return titulo; }
+          public void  setTitulo( string t ){ titulo= t;}
+
+          public Int16 GetAño ( ){return año; }
+          public void setAño ( Int16 y ){ año = y;}
+
+          public string getdirector(){ return director;}
+          public void setdirector(string dr){ director= dr;}
+
+          public string getpais( ){ return pais;}
+          public void setpais( string p){pais= p;}
+          
+
         public void Imprimepe()
         {
          //Console.WriteLine($"{titulo} ({año})");
@@ -63,8 +76,7 @@ namespace Pelicula
         static void Main(string[] args)
         {
           
-             Pelicula p1 = new Pelicula ("avatar", 2023);
-             Console.WriteLine ( p1 );
+             
 
              
              
