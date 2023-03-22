@@ -7,10 +7,10 @@ namespace Pelicula
     public class Pelicula
     {
 
-        public string titulo {get;set;}
-        public  Int16 año {get;set;}
-        public string pais {get;set;}
-         public string director {get;set;}
+        private string titulo {get;set;}
+        private  Int16 año {get;set;}
+        private string pais {get;set;}
+         private string director {get;set;}
 
     
 
@@ -26,27 +26,32 @@ namespace Pelicula
              this.año = año;
               
           }
-
-
-
         //Métodos
-         
-          public string Gettitulo(){return titulo; }
-          public void  setTitulo( string t ){ titulo= t;}
 
-          public Int16 GetAño ( ){return año; }
-          public void setAño ( Int16 y ){ año = y;}
+          public string Gettitulo(){
+            return titulo; }
+          public void  setTitulo( string t ){ 
+            titulo= t;}
 
-          public string getdirector(){ return director;}
-          public void setdirector(string dr){ director= dr;}
+          public Int16 GetAño ( ){
+            return año; }
+          public void setAño ( Int16 y ){
+             año = y;}
 
-          public string getpais( ){ return pais;}
-          public void setpais( string p){pais= p;}
-          
+          public string getdirector(){ 
+            return director;}
+          public void setdirector(string dr){ 
+            director= dr;}
+
+          public string getpais( ){
+             return pais;}
+          public void setpais( string p){
+            pais= p;}
+
 
         public void Imprimepe()
         {
-         //Console.WriteLine($"{titulo} ({año})");
+         Console.WriteLine($"{titulo} ({año})");
             
         }
         
@@ -54,12 +59,38 @@ namespace Pelicula
 
     public class Actor
     {
+        string nombre;
+        Int16 año;
+        
+        public Actor(){}
+        public Actor (string nombre , Int16 año )
+        {
+            this.nombre=nombre;
+            this.año=año;
+
+        }
         //Propiedades
-
         //Constructores
-
-
-        //Métodos 
+        //Metodos 
+        
+         public string getNombre ()
+         {
+            return nombre;
+         }
+         public void setNombre ( string name )
+         { 
+            nombre= name;
+         }
+         
+         public Int16 getaño()
+         { 
+            return año;
+         }
+         public void setAño( Int16 year )
+         { 
+            año = year;
+         }
+         
         public void Imprime()
         {
            // Console.WriteLine($"{titulo} ({Año})");
