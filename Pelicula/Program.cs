@@ -49,12 +49,26 @@ namespace Pelicula
             pais= p;}
 
 
-        public void Imprimep()
+        public void Imprime()
         {
          Console.WriteLine($"{titulo} ({año})");
             
         }
-        
+        public void AgregaActor ( Actor actor)
+        {
+            actores.Add(actor);
+        }
+        public void ImprimeActores()
+        {
+          
+          foreach (Actor p in actores )
+
+          {
+             Console.WriteLine($"{p.getNombre()})({ p.getaño()}");
+
+          }
+
+        }
     }
 
     public class Actor
@@ -104,14 +118,30 @@ namespace Pelicula
         static void Main(string[] args)
         {
           
-             Pelicula p1 = new Pelicula();
-             Pelicula p2 = new Pelicula();
+             Pelicula p1 = new Pelicula("lalaland",2003);
+            p1.AgregaActor(new Actor ("ryan Goslin" , 1900 ));
+            p1.AgregaActor(new Actor ( "emma stone" , 1905 ));
+            p1.Imprime();
+            p1.ImprimeActores();
+            
+             Pelicula p2 = new Pelicula("ellas hablan ", 2022);
+             p2.AgregaActor(new Actor("Clayre Foy", 2014));
+             p2.AgregaActor(new Actor ( "Rooney Mara ", 1985));
+             p2.Imprime();
+             p2.ImprimeActores();
+             
 
-             p1.setTitulo(" La La Land");
-             p1 .setAño (2018);
-             Console.WriteLine("{0}({1}))" , p1.Gettitulo() , p1.GetAño());
-              p1.Imprimep();
+              
 
+             List<Pelicula> peliculas = new List<Pelicula>();
+             peliculas.Add (new Pelicula("ellas hablan", 2022));
+            peliculas.Add (new Pelicula("ellas hablan", 2022));
+            peliculas.Add (new Pelicula("ellas hablan", 2022));
+            peliculas.Add (new Pelicula("ellas hablan", 2022));
+            peliculas.Add (new Pelicula("ellas hablan", 2022));
+            
+
+             
 
              
              
