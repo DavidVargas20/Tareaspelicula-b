@@ -114,7 +114,7 @@ namespace Pelicula
     class Program
     {
 
-
+ 
         static void Main(string[] args)
         {
           
@@ -129,7 +129,7 @@ namespace Pelicula
              p2.AgregaActor(new Actor ( "Rooney Mara ", 1985));
              p2.Imprime();
              p2.ImprimeActores();
-             
+
 
               
 
