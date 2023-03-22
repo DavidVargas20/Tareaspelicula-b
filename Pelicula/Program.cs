@@ -128,7 +128,7 @@ namespace Pelicula
              p2.AgregaActor(new Actor("Clayre Foy", 2014));
              p2.AgregaActor(new Actor ( "Rooney Mara ", 1985));
              p2.Imprime();
-             p2.ImprimeActores();
+             p2.ImprimeActores(); 
 
 
               
@@ -141,7 +141,7 @@ namespace Pelicula
             peliculas.Add (new Pelicula("ellas hablan", 2022));
             
 
-             
+               
 
              
              
