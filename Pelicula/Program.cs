@@ -7,10 +7,10 @@ namespace Pelicula
     public class Pelicula
     {
 
-        private string titulo {get;set;}
-        private  Int16 año {get;set;}
-        private string pais {get;set;}
-         private string director {get;set;}
+        private string titulo;
+        private  Int16 año;
+        private string pais;
+        private string director;
 
     
 
@@ -49,7 +49,7 @@ namespace Pelicula
             pais= p;}
 
 
-        public void Imprimepe()
+        public void Imprimep()
         {
          Console.WriteLine($"{titulo} ({año})");
             
@@ -90,11 +90,8 @@ namespace Pelicula
          { 
             año = year;
          }
-         
-        public void Imprime()
-        {
-           // Console.WriteLine($"{titulo} ({Año})");
-        }
+        
+        
     }
 
     // Puedes probar tu código en Main() pero lo importante
@@ -107,7 +104,14 @@ namespace Pelicula
         static void Main(string[] args)
         {
           
-             
+             Pelicula p1 = new Pelicula();
+             Pelicula p2 = new Pelicula();
+
+             p1.setTitulo(" La La Land");
+             p1 .setAño (2018);
+             Console.WriteLine("{0}({1}))" , p1.Gettitulo() , p1.GetAño());
+              p1.Imprimep();
+
 
              
              
